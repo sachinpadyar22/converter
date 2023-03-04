@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script>
+           const words = [
+    "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+    "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen",
+    "twenty", "twenty one", "twenty two", "twenty three", "twenty four", "twenty five", "twenty six", "twenty seven", "twenty eight", "twenty nine",
+    "thirty", "thirty one", "thirty two", "thirty three", "thirty four", "thirty five", "thirty six", "thirty seven", "thirty eight", "thirty nine",
+    "forty", "forty one", "forty two", "forty three", "forty four", "forty five", "forty six", "forty seven", "forty eight", "forty nine",
+    "fifty", "fifty one", "fifty two", "fifty three", "fifty four", "fifty five", "fifty six", "fifty seven", "fifty eight", "fifty nine",
+    "sixty", "sixty one", "sixty two", "sixty three", "sixty four", "sixty five", "sixty six", "sixty seven", "sixty eight", "sixty nine",
+    "seventy", "seventy one", "seventy two", "seventy three", "seventy four", "seventy five", "seventy six", "seventy seven", "seventy eight", "seventy nine",
+    "eighty", "eighty one", "eighty two", "eighty three", "eighty four", "eighty five", "eighty six", "eighty seven", "eighty eight", "eighty nine",
+    "ninety", "ninety one", "ninety two", "ninety three", "ninety four", "ninety five", "ninety six", "ninety seven", "ninety eight", "ninety nine","hundred"
+  ];
+
+    function ConvertClick( chnage, min , max){
+        var change=document.getElementById("num").value;
+         if(change==""){
+            document.getElementById("result").innerHTML=`plz provide a number`.fontcolor('red');
+         }
+         else
+         {
+            document.getElementById("result").innerHTML=words[change];
+
+        }
+          
+        
+        
+         }
+
+
+
+    </script>
+    <style>
+     main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+        } 
+        input::placeholder{
+            padding: 5px;
+        }
+
+       div{
+        border: 1px solid gray;
+        padding: 30px;
+        box-shadow: 2px 2px 2px gray;
+        height: 270px;
+       }
+
+        p{
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <main>
+       
+        <div>
+            <h1 style="text-align: center;">Convert Number Into Word</h1>
+            <input type="number" id="num" class="form-control mt-3 mb-4" placeholder="Plz Enter Your Number" >
+            <button onclick="ConvertClick()" class="btn btn-warning w-100 bg-warning">Convert</button>
+            <p id="result" style="text-align: center ;" class=" m-3 fw-bold">PROVIDE NUMBER 1 TO 100 ONLY</p>
+          
+        </div>
+    </main>
+    
+    
+</body>
+</html>
