@@ -20,7 +20,7 @@
     "ninety", "ninety one", "ninety two", "ninety three", "ninety four", "ninety five", "ninety six", "ninety seven", "ninety eight", "ninety nine","hundred"
   ];
 
-    function ConvertClick( chnage, min , max){
+    function InputUP( change, min , max){
         var change=document.getElementById("num").value;
          if(change==""){
             document.getElementById("result").innerHTML=`plz provide a number`.fontcolor('red');
@@ -67,8 +67,8 @@
        
         <div>
             <h1 style="text-align: center;">Convert Number Into Word</h1>
-            <input type="number" id="num" class="form-control mt-3 mb-4" placeholder="Plz Enter Your Number" >
-            <button onclick="ConvertClick()" class="btn btn-warning w-100 bg-warning">Convert</button>
+            <input type="number" id="num" class="form-control mt-3 mb-4" onkeyup="InputUP()" placeholder="Plz Enter Your Number" >
+           
             <p id="result" style="text-align: center ;" class=" m-3 fw-bold">PROVIDE NUMBER 1 TO 100 ONLY</p>
           
         </div>
