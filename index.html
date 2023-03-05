@@ -20,10 +20,11 @@
     "ninety", "ninety one", "ninety two", "ninety three", "ninety four", "ninety five", "ninety six", "ninety seven", "ninety eight", "ninety nine","hundred"
   ];
 
-    function InputUP( change, min , max){
+    function InputUP(){
         var change=document.getElementById("num").value;
+       
          if(change==""){
-            document.getElementById("result").innerHTML=`plz provide a number`.fontcolor('red');
+            document.getElementById("result").innerHTML=`plz provide a number`.fontcolor('black');
          }
          else
          {
@@ -59,6 +60,10 @@
         p{
             font-size: 20px;
             text-transform: uppercase;
+            background-color: orange;
+            color: white ;
+            border-radius: 5px;
+            padding: 10px;
         }
     </style>
 </head>
