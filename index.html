@@ -26,9 +26,12 @@
          if(change==""){
             document.getElementById("result").innerHTML=`plz provide a number`.fontcolor('black');
          }
+         else if(change>=1 && change<=100){
+            document.getElementById("result").innerHTML=words[change];
+         }
          else
          {
-            document.getElementById("result").innerHTML=words[change];
+            document.getElementById("result").innerHTML=`your number is out of range`;
 
         }
           
